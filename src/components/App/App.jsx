@@ -36,7 +36,7 @@ const App = () => {
       return Math.round((good / totalFeedback) * 100);
     }
   
-    const options = ["good", "neutral", "bad"];
+    const options = Object.keys({ good, neutral, bad })
 
       return (
         <>
